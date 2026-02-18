@@ -36,3 +36,6 @@ jobs:
           tags: |
             ghcr.io/idt-25-27/publish-docker-images-ilmingots/stackoverflown:main
             ghcr.io/idt-25-27/publish-docker-images-ilmingots/stackoverflown:${{ github.sha }}
+            ghcr.io/idt-25-27/publish-docker-images-ilmingots/stackoverflown:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
